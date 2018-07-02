@@ -1,0 +1,111 @@
+// base styles
+
+//style opening headings
+nav{
+    //position: fixed;
+    //top: 0;
+    z-index:2;
+    @include mediaQry(medium){
+        display:flex;
+    }
+}
+
+.main{
+    overflow:hidden;
+    display:block;
+    
+    //height:100vh;
+    max-height: 100%;
+
+}
+.container{
+margin: 0 auto;
+text-align: center;
+//height:100vh;
+    box-sizing:border-box;
+    background:url('../Images/pattern3.jpg') no-repeat center center;
+    background-size:50vh;
+    background-size:cover;
+    min-height: 50%;
+    @include mediaQry(large){
+            background-attachment: fixed;
+    z-index: .1;
+
+    }
+}
+.info{
+    width:90%;
+    margin: 0 auto; 
+       //background-attachment:fixed;
+
+}
+.pitch{
+    background-color: rgba(250, 240, 230, 0.5);
+    //width:90%;
+    padding-top:1em;
+    padding-bottom:1em;
+
+    margin: 0 auto; 
+    width:80%;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    color:$storm;
+@include mediaQry(medium){
+    width:70%;
+
+}
+}
+.pitchText{
+    font-size:18px;
+
+}
+.sectionHeading{
+    font-family: 'Crushed', cursive;
+    font-size:3em;
+    margin:20px;
+    text-align:center;
+    display: block;
+    color:$storm;
+    @include mediaQry(large){
+        display: inline-block;
+ 
+    }
+
+    //height:100vh;
+    //background: url("images/project1.jpg") no repeat top center;
+}
+body{
+    //background:url('../Images/pattern2.jpg') no-repeat top center;
+    //background-size: cover;
+    //background-color:red;
+}
+.mainTitle{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Crushed', cursive;
+    color:$storm;
+    @include mediaQry(large){
+        font-size: 6em;
+ 
+    }
+}
+
+a:link{
+        text-decoration:none;
+color:$storm;
+}
+a:hover{
+    cursor: pointer;
+
+    @include mediaQry(large){
+            transform: scale(1.3);
+
+    }
+
+}
+a:visited{
+color:$storm;    
+}
+li:hover{
+    color: $teal;
+}

@@ -1,0 +1,54 @@
+//navigation
+
+.nav{
+    width:100%;
+    position:fixed;
+    top: 0;
+    background-color: white;
+    padding-bottom: 2.5em;
+    
+    @include mediaQry(medium){
+        padding-bottom: 1em;
+
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    justify-content: space-between;
+    //top:0;
+    z-index:10;
+    overflow:hidden;
+    }
+}
+ul{
+    position:fixed;
+    top:10;
+    margin-top:-10px;
+    @include mediaQry(medium){
+        position:relative;
+    display:inline-flex;
+    margin:0;
+    padding:1rem;
+    }
+}
+
+
+li{   
+    text-decoration: none;
+    cursor:pointer;
+    display:inline-flex;
+    flex-direction:row;
+    padding: .5rem;
+
+    @include mediaQry(medium){
+    }
+
+}
+li:hover{
+scale: 1.2;
+}
+.navMe{
+    padding:10px;
+    margin-top:.5rem;
+    margin-left:.5rem;
+    margin-right:.5rem;
+}
