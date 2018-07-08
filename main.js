@@ -175,7 +175,7 @@ let prev=document.createElement("button");
 
 }
 // add event Listener to open modal on photos
-let photoListener = document.getElementById("display");
+let photoListener = document.getElementById("displayContainer");
 photoListener.addEventListener("click",(event)=>{
     modal.style.display ="block";
     let projectMore = $(event.target).closest("img");
