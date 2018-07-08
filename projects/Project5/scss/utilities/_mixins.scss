@@ -1,0 +1,16 @@
+// mixin for generating background colors for buttons.
+@each $theme, $color in $ui-colors{
+    .btn--#{$theme}{
+            background-color:$color;
+    }
+};
+
+// mixin for calulating column widths
+
+// adjacent sibling margins
+/*    @mixin doubly ($margin: 1em) {
+    & + &{
+    margin-left: $margin;
+    @content;
+    }
+};    */

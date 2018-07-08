@@ -1,0 +1,15 @@
+
+
+
+// em value calc
+@function em($target, $context:$base__fontsize){
+    @return ($target / $context)* 1em;
+}
+
+// Calculation for grid width per number of columns. The grid function takes three arguments: width, column, gutter.
+/*    @function grid-context($grid-col-width, $grid-col-count, $grid-gutter-width) {
+     // variable that holds value of (width * number of columns) plus
+     // width of the gutter multiplied by number of columns subtracted by one
+    $grid-context: ($grid-col-width * $grid-col-count) + ($grid-gutter-width * ($grid-col-count -1));
+    @return $grid-context;
+ }   */

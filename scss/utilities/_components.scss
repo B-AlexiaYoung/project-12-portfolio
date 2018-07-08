@@ -52,3 +52,108 @@ scale: 1.2;
     margin-left:.5rem;
     margin-right:.5rem;
 }
+
+//sections
+.secTitle{
+    height:50%;
+    font-size: 3rem;
+    color: $foamgreen;
+    margin-top:0;
+    padding-top: 3rem;
+}
+.workTitle{
+    padding-bottom: 2rem;
+    margin-bottom:0;
+    background-color:$sand;
+    text-align:center;
+}
+#about{
+    display:block;
+    text-align:center;
+    @include mediaQry(medium){
+        display:inline-flex;
+    }
+
+}
+.secAbout{
+    @include mediaQry(medium){
+    height: 50%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:2rem;
+    background-color: $storm;
+    }
+}
+.workSection{
+    text-align:center;
+    margin: 0 auto;
+    display:flex;
+    margin:1rem;
+
+}
+#displayContainer{
+    display:flex;
+    background-color:$sand;
+    flex-direction:column;
+
+    margin:10px;
+    justify-content: space-evenly;
+    /*margin-left:2rem;
+    margin-right:2rem;*/
+    @include mediaQry(medium){
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        
+    }
+}
+#display{
+    display: inline-flex;
+    flex-direction: column;
+    padding:1rem;
+    text-align:center;
+    @include mediaQry(medium){
+    width: 18rem;
+    }
+}
+
+.work{
+    background-color: $sand;
+    flex-direction: row;
+    display:inline-flex;
+
+}
+/*.aboutText{
+    background-color: $sand;
+    color:white;
+    font-size: 1em;
+    line-height: 1.3em;
+
+}
+
+}*/
+.aboutText{
+    //margin:.2rem;
+    width: 95%;
+    background-color:$teal;
+    color:white;
+    padding: .5rem;
+    margin-top:0;
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-bottom:0;
+
+    @include mediaQry(medium){
+        justify-content:flex-end;
+        background-color:white;
+        color:$storm;
+        //padding: .2rem;
+        margin:.5rem;
+        //float: right;
+        width: 40%;
+        border: 2px solid $teal;
+        border-radius: 5px;
+        
+    }
+}

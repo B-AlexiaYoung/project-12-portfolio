@@ -1,0 +1,20 @@
+// clearfix 
+%clearfix{
+    &:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+}
+// center 
+%center{
+    text-align:center;
+}
+
+
+
+/*%column{  // include this in utilites extends partial
+    float:left;
+    padding: 0 10px;
+    margin-left: 2%;
+}  */
