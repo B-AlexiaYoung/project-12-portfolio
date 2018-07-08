@@ -100,8 +100,8 @@ a:hover{
 
     @include mediaQry(large){
             transform: scale(1.3);
-
-    }
+            transition: transform .5s; 
+        }
 
 }
 a:visited{
@@ -134,12 +134,17 @@ li:hover{
     margin:.5rem;
     border: 1px solid $teal;
     box-shadow: 5px 10px 10px $storm;
-    cursor:pointer;
 
     @include mediaQry(medium){
     margin-top:3rem;
     cursor:default;
     }
+}
+img:hover{
+    transform: rotate(2deg);
+  transition: transform .5s; 
+     cursor:pointer;
+
 }
 #close{
     float:right;
@@ -205,4 +210,14 @@ margin-left:-10px}
   
     }
 }
-
+footer{
+    text-align:center;
+    background-color:white;
+    height: 100px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    fill:$storm;
+    cursor:pointer;
+}

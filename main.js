@@ -5,7 +5,7 @@ let projects=[
         src:" images/project11.jpg",
         alt: "project eleven react flickr gallery",
         description: "Image gallery built using React and the Flickr api along with routing and a search function",
-        projectUrl: "projects/project11/index.html",
+        projectUrl: "https://github.com/B-AlexiaYoung/project11-react-photo-viewer/blob/master/public/index.html",
         projectRepo:"",
 
     },
